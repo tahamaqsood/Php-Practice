@@ -1,0 +1,56 @@
+//For checking composer 
+1.open cmd from the same directory then type composer.
+
+2.After this create Folder in htdocs.
+
+3.Open cmd from the same directory and type cd "Folder name"
+
+4.Then clr To check wether the folder is created or not.
+
+//Creating project through composer type: 
+composer create-project --prefer-dist laravel/laravel PR
+Files will be created.
+
+//To check The project
+First to the folder where the laravel is installed.
+then type: php artisan serve
+
+//Now Open Visual studio code or any ide you want to use.
+For Controller go to App/Http/Controllers/
+For Welcome.blade.php go to resorces/views/
+
+//Routing
+For Routing query is 
+Route::get('/Pagenamewheretoroute', function (){
+ return view('Pagenamewheretoroute');
+});
+!!If file is in folder then folder name and fullstop then
+file name!!
+Route::get('/Pagenamewheretoroute', function (){
+ return view('foldername.Pagenamewheretoroute');
+});
+!!Routing For controller !!
+Route::get('/','Pagename@Controlleractionname');
+Route::get('/', 'App\Http\Controllers\home@index');
+
+//href tag (curly brackets)
+<a herf="{{ url('/') }}">Home</a>
+<a herf="{{ url('/about') }}">About</a>
+
+//making controller 
+ctrl+shift- p it'll open command plate then 
+install laravel Assist, Laravel artisan!!
+after this again open command plate and Type Artisan a dropdown
+will popup from where all the actions will be done.
+!! Running view from controller.
+public
+
+??Templating!!
+paste css folders of template in public directory of your project.
+@extends(foldername.viewpagename')
+//Pukarne ka keyword@yield('titlejustforexample')
+it'll show in evry child page 
+!! To recall @yield go to your veiw page and add
+@section('titlejustforexample')
+Can type here the title
+@endsection()
