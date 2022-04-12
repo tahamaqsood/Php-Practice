@@ -1,0 +1,35 @@
+open xampp then create folder and run cmd
+then type:
+composer create-project --prefer-dist laravel/laravel loginproject
+
+For creating Login Template Run following commands
+type:
+composer require laravel/ui
+
+after this run
+1.npm install
+2.npm run dev
+
+Run Both Commands
+//For Simple login form
+php artisan ui bootstrap
+
+//For Login and registration 
+php artisan ui bootstrap --auth
+
+
+//For Checking Routes
+php artisan route:list 
+
+
+for creating database 
+1. create database in mysql
+CREATE DATABASE loginlaravel;
+
+2. make changes in .env file
+DB_DATABASE=loginlaravel
+
+3. then type.
+php artisan migrate
+
+
