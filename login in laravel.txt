@@ -1,0 +1,26 @@
+create folder with cmd
+type:
+composer create-project --prefer-dist laravel/laravel PR
+
+create database in mysql
+
+
+then this
+type:
+cd yourprojectname 
+
+then type: 
+php artisan serve 
+
+then change:(.env/mysql)
+DB_DATABASE=nameofyourdatabase
+
+
+Errors
+Do you have two users logged in using the same browser? 
+but Why would you allow a user to login twice in the same browser? 
+if you don't care about security then just comment these two lines 
+$request->session()->invalidate(); and 
+$request->session()->regenerateToken(); 
+in both log out functions (user and admin) 
+ but I'll suggest you not to do this.
