@@ -54,3 +54,7 @@ it'll show in evry child page
 @section('titlejustforexample')
 Can type here the title
 @endsection()
+
+
+//for other project like crud
+https://phppot.com/php/php-laravel-project-example/
